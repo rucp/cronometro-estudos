@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cronômetro de Estudos Online</title>
+
+    <meta
+        name="description"
+        content="Cronômetro de estudos online gratuito para acompanhar seu tempo líquido de estudo."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="cronometro">
+
+            <!-- Cabeçalho -->
+            <header class="cabecalho">
+                <div>
+                    <h1>Cronômetro de Estudos</h1>
+                    <p>Meça seu tempo líquido de estudo.</p>
+                </div>
+
+                <button
+                    id="botaoTema"
+                    class="botao-tema"
+                    type="button"
+                    aria-label="Alternar tema"
+                >
+                    ☾
+                </button>
+            </header>
+
+
+            <!-- Cronômetro -->
+            <section class="area-tempo">
+
+                <div id="tempo" class="tempo">
+                    00:00:00.00
+                </div>
+
+                <p id="status" class="status">
+                    Pronto para começar
+                </p>
+
+            </section>
+
+
+            <!-- Botões -->
+            <section class="controles">
+
+                <button
+                    id="botaoPrincipal"
+                    class="botao botao-principal"
+                    type="button"
+                >
+                    ▶ Iniciar
+                </button>
+
+                <button
+                    id="botaoVolta"
+                    class="botao botao-secundario"
+                    type="button"
+                >
+                    Volta
+                </button>
+
+                <button
+                    id="botaoRedefinir"
+                    class="botao botao-secundario"
+                    type="button"
+                >
+                    Redefinir
+                </button>
+
+            </section>
+
+
+            <!-- Atalhos -->
+            <section class="atalhos">
+
+                <span>
+                    <kbd>SPACE</kbd>
+                    iniciar / pausar
+                </span>
+
+                <span>
+                    <kbd>L</kbd>
+                    volta
+                </span>
+
+                <span>
+                    <kbd>R</kbd>
+                    redefinir
+                </span>
+
+                <span>
+                    <kbd>F</kbd>
+                    tela cheia
+                </span>
+
+            </section>
+
+
+            <!-- Voltas -->
+            <section id="secaoVoltas" class="voltas escondido">
+
+                <div class="titulo-voltas">
+                    <h2>Voltas</h2>
+
+                    <span id="contadorVoltas">
+                        0 voltas
+                    </span>
+                </div>
+
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tempo da volta</th>
+                                <th>Tempo decorrido</th>
+                                <th>Hora atual</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="listaVoltas">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- Texto útil para usuário e mecanismos de busca -->
+        <footer>
+            Cronômetro online gratuito para acompanhar seu tempo de estudo.
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
