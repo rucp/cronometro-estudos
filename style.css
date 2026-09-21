@@ -49,13 +49,11 @@ body {
     min-height: 100vh;
 
     font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Arial,
-        sans-serif;
+    "Nunito",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 
     background-color: var(--fundo);
     color: var(--texto);
@@ -80,6 +78,28 @@ body {
     justify-content: center;
 
     position: relative;
+}
+
+/* ================================
+   MARCA TIMERA
+================================ */
+
+.marca {
+    position: absolute;
+
+    top: 22px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+}
+
+.marca span {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    color: var(--texto);
 }
 
 
