@@ -70,8 +70,16 @@ body {
     width: 100%;
     max-width: 800px;
 
+    min-height: 100vh;
+
     margin: 0 auto;
     padding: 40px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
 }
 
 
@@ -385,7 +393,11 @@ tbody tr:last-child td {
 ================================ */
 
 footer {
-    margin-top: 20px;
+    position: absolute;
+
+    bottom: 20px;
+    left: 24px;
+    right: 24px;
 
     color: var(--texto-secundario);
 
