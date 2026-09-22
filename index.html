@@ -13,11 +13,15 @@
         content="Cronômetro de estudos online gratuito para acompanhar seu tempo líquido de estudo."
     >
 
+    <!-- Fonte Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,137 +29,153 @@
 
     <main class="app">
 
-        <div class="marca">
-            <span>Timera</span>
-        </div>
+        <!-- Marca + cronômetro -->
+        <div class="conteudo-principal">
 
-        <section class="cronometro">
-
-            <!-- Cabeçalho -->
-            <header class="cabecalho">
-                <div>
-                    <h1>Cronômetro de Estudos</h1>
-                    <p>Meça seu tempo líquido de estudo.</p>
-                </div>
-
-                <button
-                    id="botaoTema"
-                    class="botao-tema"
-                    type="button"
-                    aria-label="Alternar tema"
-                >
-                    ☾
-                </button>
-            </header>
+            <!-- Marca -->
+            <div class="marca">
+                <span>Timera</span>
+                <p>O tempo, sem distrações.</p>
+            </div>
 
 
             <!-- Cronômetro -->
-            <section class="area-tempo">
+            <section class="cronometro">
 
-                <div id="tempo" class="tempo">
-                    00:00:00.00
-                </div>
+                <!-- Cabeçalho -->
+                <header class="cabecalho">
 
-                <p id="status" class="status">
-                    Pronto para começar
-                </p>
+                    <div>
+                        <h1>Cronômetro de Estudos</h1>
+                        <p>Meça seu tempo líquido de estudo.</p>
+                    </div>
 
-            </section>
+                    <button
+                        id="botaoTema"
+                        class="botao-tema"
+                        type="button"
+                        aria-label="Alternar tema"
+                    >
+                        ☾
+                    </button>
 
-
-            <!-- Botões -->
-            <section class="controles">
-
-                <button
-                    id="botaoPrincipal"
-                    class="botao botao-principal"
-                    type="button"
-                >
-                    ▶ Iniciar
-                </button>
-
-                <button
-                    id="botaoVolta"
-                    class="botao botao-secundario"
-                    type="button"
-                >
-                    Volta
-                </button>
-
-                <button
-                    id="botaoRedefinir"
-                    class="botao botao-secundario"
-                    type="button"
-                >
-                    Redefinir
-                </button>
-
-            </section>
+                </header>
 
 
-            <!-- Atalhos -->
-            <section class="atalhos">
+                <!-- Área do tempo -->
+                <section class="area-tempo">
 
-                <span>
-                    <kbd>SPACE</kbd>
-                    iniciar / pausar
-                </span>
+                    <div id="tempo" class="tempo">
+                        00:00:00.00
+                    </div>
 
-                <span>
-                    <kbd>L</kbd>
-                    volta
-                </span>
+                    <p id="status" class="status">
+                        Pronto para começar
+                    </p>
 
-                <span>
-                    <kbd>R</kbd>
-                    redefinir
-                </span>
-
-                <span>
-                    <kbd>F</kbd>
-                    tela cheia
-                </span>
-
-            </section>
+                </section>
 
 
-            <!-- Voltas -->
-            <section id="secaoVoltas" class="voltas escondido">
+                <!-- Botões -->
+                <section class="controles">
 
-                <div class="titulo-voltas">
-                    <h2>Voltas</h2>
+                    <button
+                        id="botaoPrincipal"
+                        class="botao botao-principal"
+                        type="button"
+                    >
+                        Iniciar
+                    </button>
 
-                    <span id="contadorVoltas">
-                        0 voltas
+                    <button
+                        id="botaoVolta"
+                        class="botao botao-secundario"
+                        type="button"
+                    >
+                        Volta
+                    </button>
+
+                    <button
+                        id="botaoRedefinir"
+                        class="botao botao-secundario"
+                        type="button"
+                    >
+                        Redefinir
+                    </button>
+
+                </section>
+
+
+                <!-- Atalhos -->
+                <section class="atalhos">
+
+                    <span>
+                        <kbd>SPACE</kbd>
+                        iniciar / pausar
                     </span>
-                </div>
 
-                <div class="tabela-container">
+                    <span>
+                        <kbd>L</kbd>
+                        volta
+                    </span>
 
-                    <table>
+                    <span>
+                        <kbd>R</kbd>
+                        redefinir
+                    </span>
 
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Tempo da volta</th>
-                                <th>Tempo decorrido</th>
-                                <th>Hora atual</th>
-                            </tr>
-                        </thead>
+                    <span>
+                        <kbd>F</kbd>
+                        tela cheia
+                    </span>
 
-                        <tbody id="listaVoltas">
-                        </tbody>
+                </section>
 
-                    </table>
 
-                </div>
+                <!-- Voltas -->
+                <section
+                    id="secaoVoltas"
+                    class="voltas escondido"
+                >
+
+                    <div class="titulo-voltas">
+
+                        <h2>Voltas</h2>
+
+                        <span id="contadorVoltas">
+                            0 voltas
+                        </span>
+
+                    </div>
+
+                    <div class="tabela-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tempo da volta</th>
+                                    <th>Tempo decorrido</th>
+                                    <th>Hora atual</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="listaVoltas">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
 
             </section>
 
-        </section>
+        </div>
 
 
-        <!-- Texto útil para usuário e mecanismos de busca -->
+        <!-- Rodapé -->
         <footer>
             Cronômetro online gratuito para acompanhar seu tempo de estudo.
         </footer>
@@ -163,6 +183,7 @@
     </main>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>

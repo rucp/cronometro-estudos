@@ -101,7 +101,7 @@ function iniciarOuPausar() {
 
         atualizarTela();
 
-        botaoPrincipal.textContent = "▶ Continuar";
+        botaoPrincipal.textContent = "Continuar";
 
         statusCronometro.textContent = "Pausado";
 
@@ -117,7 +117,7 @@ function iniciarOuPausar() {
         30
     );
 
-    botaoPrincipal.textContent = "Ⅱ Pausar";
+    botaoPrincipal.textContent = "Pausar";
 
     statusCronometro.textContent =
         "Estudando agora";
@@ -238,7 +238,7 @@ function redefinirCronometro() {
 
 
     botaoPrincipal.textContent =
-        "▶ Iniciar";
+        "Iniciar";
 
 
     statusCronometro.textContent =
@@ -422,7 +422,7 @@ function carregarSessao() {
 
 
         botaoPrincipal.textContent =
-            "Ⅱ Pausar";
+            "Pausar";
 
 
         statusCronometro.textContent =
